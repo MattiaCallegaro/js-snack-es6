@@ -20,4 +20,6 @@ const biciDaCorsa =[
 
 ]
 
-console.log(biciDaCorsa)
+for(let i=0; i<biciDaCorsa.length; i++){
+    console.log(biciDaCorsa[i].peso)
+}
