@@ -60,3 +60,15 @@ const squadreDiCalcio =[
 ]
 
 console.log(squadreDiCalcio)
+
+const generateRandomNumber = () => {
+    return Math.floor(Math.random() *( 15 - 10 + 1)) + 1;
+}
+
+
+for( let i=0; i<squadreDiCalcio.length; i++){
+    squadreDiCalcio[i].punti_fatti = generateRandomNumber();
+    squadreDiCalcio[i].falli_subiti = generateRandomNumber();
+}
+
+console.log(squadreDiCalcio);
