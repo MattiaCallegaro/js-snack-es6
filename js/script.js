@@ -24,13 +24,19 @@ const biciDaCorsa =[
 ]
 
 // ciclo per trovare il peso minore
+let pesoMin=biciDaCorsa[0].peso;
+let biciLeggera =biciDaCorsa[0] ;
 
 for(let i=0; i<biciDaCorsa.length; i++){
-    console.log(biciDaCorsa[i.peso])
-    if(biciDaCorsa[i].peso<=5){
-        console.log(biciDaCorsa[i].nome)
+    // console.log(biciDaCorsa[i.peso])
+    if(biciDaCorsa[i].peso < pesoMin){
+       pesoMin = biciDaCorsa[i].peso;
+       biciLeggera = biciDaCorsa[i]
+
     }
 }
+console.log("Tutte le bici", biciDaCorsa)
+console.log(`La  bici più leggera è ${biciLeggera.nome} con un peso di ${pesoMin} kg `)
 
 //Snack 2
 
@@ -61,14 +67,19 @@ const squadreDiCalcio =[
 
 console.log(squadreDiCalcio)
 
+//genero numeri casuali
 const generateRandomNumber = () => {
     return Math.floor(Math.random() *( 15 - 10 + 1)) + 1;
 }
 
-
+// ciclo l'array per far in mododi ottenere numeri casuali per punti e falli
 for( let i=0; i<squadreDiCalcio.length; i++){
     squadreDiCalcio[i].punti_fatti = generateRandomNumber();
     squadreDiCalcio[i].falli_subiti = generateRandomNumber();
 }
 
 console.log(squadreDiCalcio);
+
+for( let i=0; i<squadreDiCalcio.length; i++){
+
+}
