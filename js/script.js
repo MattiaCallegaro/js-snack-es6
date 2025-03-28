@@ -3,23 +3,26 @@
 const biciDaCorsa =[
     {
         nome:"Pinnarello",
-        peso:"6.4 kg",
+        peso:6.8,
     },
     {
-        nome:"Pinnarello",
-        peso:"7.2 kg",
+        nome:"Van Rysel",
+        peso:6,
     },
     {
-        nome:"Pinnarello",
-        peso:"8.0kg",
+        nome:"E-gravel",
+        peso:5.4,
     },
     {
-        nome:"Pinnarello",
-        peso:"5.9 kg",
+        nome:"Tarmac",
+        peso:5,
     }
 
 ]
 
 for(let i=0; i<biciDaCorsa.length; i++){
-    console.log(biciDaCorsa[i].peso)
+    console.log(biciDaCorsa[i.peso])
+    if(biciDaCorsa[i].peso<=5){
+        console.log(biciDaCorsa[i].nome)
+    }
 }
